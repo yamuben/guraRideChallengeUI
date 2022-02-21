@@ -1,0 +1,104 @@
+
+.log{
+transform: rotate(180deg); 
+/* position: absolute; */
+/* width: 1000px; */
+/* height: 900px; */
+/* right: 525px;  */
+/* margin-right: 500px; */
+
+/* background-color: red; */
+/* margin-right: 400px; */
+margin-bottom: 160px;
+margin: 50,50px;
+
+
+
+
+/* background: url(store.png);  */
+}
+.Home_Login{
+  
+  display: flex;
+  flex-direction: column;
+  margin-top:90px;
+
+  /* margin: 50,100,50; */
+
+}
+.kwaco{
+ color: #2C358D;
+font-family: Roboto;
+font-style: normal;
+font-weight: 800;
+font-size: 35px;
+line-height: 50px;
+margin-top: 15px;
+margin-left: 125px;
+}
+.groupPhoto{
+left: 72.81%;
+right: 20.16%;
+top: 18.98%;
+bottom: 63.96%;
+margin-left: 150px;
+
+}
+.Kivu{
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 29px;
+margin-left: 60px;
+margin-top: 10px;
+margin-bottom: 20px;
+
+color: #00A44B;
+}
+.PhoneNumber{
+width: 500px;
+height: 40px;
+left: 1164px;
+top: 576px;
+
+background: #F8F8F8;
+border-radius: 40px;
+margin-top: 20px;
+}
+.site-form-item-icon{
+
+}
+
+.Password{
+  width: 500px;
+  height: 40px;
+  left: 1164px;
+  top: 639px;
+  margin-top: 20px;
+  
+  background: #F8F8F8;
+  border-radius: 40px;
+}
+
+.submit{
+  width: 400px;
+  height: 40px;
+  left: 1164px;
+  top: 771px; 
+  margin-top: 20px;
+  background: rgba(38, 170, 225, 1);
+  border-radius: 40px;
+}
+.words{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 60px;
+  margin-top: 20px;
+  /* margin-bottom: ; */
+}
+.container-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
