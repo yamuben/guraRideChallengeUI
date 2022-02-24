@@ -9,8 +9,8 @@ import group from "./Group.png";
 import Views from "./views.css";
 import { MdRememberMe } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import{RiLockPasswordFill} from "react-icons/ri"
-import { Form, Input} from "antd";
+import { RiLockPasswordFill } from "react-icons/ri";
+import { Form, Input } from "antd";
 
 import "antd/dist/antd.css";
 
@@ -30,21 +30,21 @@ const onFinish = (values) => {
 export default function BasicGrid() {
   const classx = useStyle();
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={0}>
-        <Grid item xs={6}>
-          <div className={classx.paper1}>
-            <div className="log">
-              <img src={store} alt="" style={{ width: "800px"}} />;
-            </div>
-          </div>
+    <Box sx={{ flexGrow: 1 }} style={{background: "linear-gradient(90deg, rgba(50,161,209,1) 6%, rgba(255,255,255,1) 43%)", height:"100vh",position:"fixed", width:"100%"}}>
+      <Grid container spacing={0} >
+        <Grid item xs={7} style={{padding:"110px 0px",height:"100vh"}}>
+          {/* <div className={classx.paper1}> */}
+            {/* <div className="log"> */}
+              <img src={store} alt="" style={{ width: "90%" }} />;
+            {/* </div> */}
+          {/* </div> */}
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={3} style={{padding:"150px 0px 0px 0px ",height:"100vh"}}>
           {/* <div className="container-2"> */}
-          <div className={classx.paper2}>
+          {/* <div className={classx.paper2}> */}
             <div className="Home_Login">
               <div className="groupPhoto">
-                <img src={group} alt="" style={{ width: "100px"}} />
+                <img src={group} alt="" style={{ width: "100px" }} />
               </div>
 
               <span className="kwaco"> KWACO</span>
@@ -52,7 +52,7 @@ export default function BasicGrid() {
               <div>
                 <Form.Item
                   name="Phone Number"
-                  style={{ width: "400px" }}
+                  style={{ width: "100%" }}
                   rules={[
                     {
                       required: true,
@@ -69,7 +69,7 @@ export default function BasicGrid() {
                 </Form.Item>
                 <Form.Item
                   name="Password"
-                  style={{ width: "400px" }}
+                  style={{ width: "100%" }}
                   rules={[
                     {
                       required: true,
@@ -83,24 +83,22 @@ export default function BasicGrid() {
                     }
                     placeholder="Password"
                   />
-               
-                  </Form.Item>
-               
-              <div className="words">
-                <div>
-                  {" "}
-                  <MdRememberMe /> Remember me{" "}
+                </Form.Item>
+
+                <div className="words">
+                  <div>
+                    {" "}
+                    <MdRememberMe /> Remember me{" "}
+                  </div>
+                  <span>Forgot Password?</span>
                 </div>
-                <span>Forgot Password?</span>
-              </div>
-              <div>
-                <input className="submit" type="submit" value="Login" />
+                  <input className="submit" type="submit" value="Login" style={{ width: "100%" }} />
+           
               </div>
             </div>
-          </div>
-
-      </div>
+          {/* </div> */}
         </Grid>
+        <Grid item xs={2} ></Grid>
       </Grid>
     </Box>
   );

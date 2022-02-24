@@ -11,6 +11,7 @@ export const useStyle = makeStyles(() =>
       // background: "red",
       // margin:"50px,100px,200px",
       display:"flex",
+      width: "100%",
       justifyContent:"space-between",
       // backgroundColor:"red"
       
@@ -19,14 +20,14 @@ export const useStyle = makeStyles(() =>
     paper1: {
 
     position: "absolute",
-    // width: "700px",
-    height: "690px",
+    width: "100%",
+    height: "100vh",
     // left: "1920px",
     // top: "1080px", 
-    background: "linear-gradient( 270deg, #26aae1 -17.76%, rgba(38, 170, 225, 0) 49.42%)",
+    // background: "linear-gradient( 270deg, #26aae1 -5.76%, rgba(38, 170, 225, 0) 49.42%)",
     transform: "rotate(180deg)",
     display:"flex", 
-    // backgroundColor:"red",
+    // backgroundColor:"green",
     
     
     }
