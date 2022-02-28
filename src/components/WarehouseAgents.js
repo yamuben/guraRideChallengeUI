@@ -1,4 +1,10 @@
-import { Card, CardContent, Typography, Divider, Button } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  Typography,
+  Divider,
+  Button,
+} from "@material-ui/core";
 import { useDashboardStyles } from "./dashboard.style";
 import AgentCard from "./AgentCard";
 
