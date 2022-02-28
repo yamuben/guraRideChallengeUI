@@ -1,12 +1,13 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
+import { Box, Button } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import { useStyle } from "./style";
-import store from "./store.png";
-import group from "./Group.png";
-import Views from "./views.css";
+import { useLoginStyle } from "./Login.style";
+import store from "../../assets/images/store.png";
+import group from "../../assets/images/Group.png";
+import Views from "../pages.css";
+import { Link } from "react-router-dom";
 import { MdRememberMe } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { RiLockPasswordFill } from "react-icons/ri";
@@ -28,7 +29,7 @@ const onFinish = (values) => {
   console.log("Finish:", values);
 };
 export default function BasicGrid() {
-  const classx = useStyle();
+  const classes = useLoginStyle();
   return (
     <Box
       sx={{ flexGrow: 1 }}
@@ -42,18 +43,13 @@ export default function BasicGrid() {
     >
       <Grid container spacing={0}>
         <Grid item xs={7} style={{ padding: "110px 0px", height: "100vh" }}>
-          {/* <div className={classx.paper1}> */}
-          {/* <div className="log"> */}
-          <img src={store} alt="" style={{ width: "90%" }} />;{/* </div> */}
-          {/* </div> */}
+          <img src={store} alt="" style={{ width: "90%" }} />;
         </Grid>
         <Grid
           item
           xs={3}
           style={{ padding: "150px 0px 0px 0px ", height: "100vh" }}
         >
-          {/* <div className="container-2"> */}
-          {/* <div className={classx.paper2}> */}
           <div className="Home_Login">
             <div className="groupPhoto">
               <img src={group} alt="" style={{ width: "100px" }} />
@@ -104,15 +100,13 @@ export default function BasicGrid() {
                 </div>
                 <span>Forgot Password?</span>
               </div>
-              <input
-                className="submit"
-                type="submit"
-                value="Login"
-                style={{ width: "100%" }}
-              />
+              <Link to="/dashboard">
+                <Button variant="contained" className={classes.btn}>
+                  Login
+                </Button>
+              </Link>
             </div>
           </div>
-          {/* </div> */}
         </Grid>
         <Grid item xs={2}></Grid>
       </Grid>

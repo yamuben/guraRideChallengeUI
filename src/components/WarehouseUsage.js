@@ -1,4 +1,4 @@
-import { Button, Card, CardContent, Typography, Box } from "@mui/material";
+import { Button, Card, CardContent, Typography, Box } from "@material-ui/core";
 import { CircularProgress } from "@material-ui/core";
 import { useDashboardStyles } from "./dashboard.style";
 
@@ -22,14 +22,14 @@ const WarehouseUsage = () => {
                 zIndex: "10",
               }}
               size={90}
-              thickness={4}
+              thickness={2}
               value={73}
             />
             <CircularProgress
               variant="determinate"
               style={{ color: "rgba(255, 255, 255, 0.5)" }}
-              size={86}
-              thickness={2}
+              size={88}
+              thickness={1}
               value={100}
             />
             <Box

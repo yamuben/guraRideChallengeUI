@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Home from "../views/Home";
-import Dashboard from "../views/DashboardView";
+import Home from "../pages/login/Login";
+import Dashboard from "../pages/DashboardView";
 
 const Index = () => {
   return (

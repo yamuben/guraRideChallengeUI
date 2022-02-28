@@ -5,6 +5,7 @@ import {
   primaryOrange,
   primaryPurple,
   primaryBlue,
+  primaryTextColor,
 } from "../helpers/constants";
 
 export const useDashboardStyles = makeStyles((Theme) =>
@@ -87,6 +88,44 @@ export const useDashboardStyles = makeStyles((Theme) =>
     },
     agentRoleText: {
       fontSize: "12px",
+    },
+    headerContainer: {
+      width: "100%",
+      display: "flex",
+      justifyContent: "spaceBetween",
+    },
+    headerText: {
+      color: primaryBlue,
+      fontSize: "40px",
+    },
+  })
+);
+
+export const useNavStyles = makeStyles((Theme) =>
+  createStyles({
+    list: {
+      listStyle: "none",
+      color: "black",
+    },
+    listItem: {
+      display: "flex",
+      alignItems: "center",
+      color: "#0060B6",
+      "&:hover": {
+        color: primaryBlue,
+      },
+    },
+    linkItem: {
+      width: "100%",
+      textDecoration: "none",
+      fontSize: "18px",
+      color: primaryTextColor,
+      "&:hover": {
+        color: primaryBlue,
+      },
+    },
+    mg1: {
+      margin: "15px 0",
     },
   })
 );
