@@ -1,0 +1,26 @@
+[
+  {
+    "logo": "../../assets/icons/truck.svg",
+    "color": "#26AAE1",
+    "primaryText": "13",
+    "secondaryText": "New Entries"
+  },
+  {
+    "logo": "../../assets/icons/truck.svg",
+    "color": "#26AAE1",
+    "primaryText": "13",
+    "secondaryText": "New Exits"
+  },
+  {
+    "logo": "../../assets/icons/income.svg",
+    "color": "#26AAE1",
+    "primaryText": "100$",
+    "secondaryText": "Total Income"
+  },
+  {
+    "logo": "../../assets/icons/income.svg",
+    "color": "#26AAE1",
+    "primaryText": "200$",
+    "secondaryText": "Total Expenses"
+  }
+]
