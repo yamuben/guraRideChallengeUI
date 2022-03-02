@@ -6,7 +6,7 @@ import {
   primaryPurple,
   primaryBlue,
   primaryTextColor,
-} from "../helpers/constants";
+} from "../../helpers/constants";
 
 export const useDashboardStyles = makeStyles((Theme) =>
   createStyles({
@@ -78,7 +78,7 @@ export const useDashboardStyles = makeStyles((Theme) =>
       fontSize: "8px",
     },
     agentName: {
-      fontSize: "14px",
+      fontSize: "12px",
     },
     agentRoleContainer: {
       backgroundColor: primaryPurple,
@@ -87,16 +87,46 @@ export const useDashboardStyles = makeStyles((Theme) =>
       borderRadius: "20px",
     },
     agentRoleText: {
-      fontSize: "12px",
+      fontSize: "11px",
     },
     headerContainer: {
       width: "100%",
       display: "flex",
       justifyContent: "spaceBetween",
     },
+    headerContainerLeft: {
+      display: "flex",
+      justifyContent: "spaceBetween",
+      alignItems: "center",
+      marginLeft: "auto",
+    },
     headerText: {
       color: primaryBlue,
       fontSize: "40px",
+    },
+    dashboardContainer: {
+      color: "white",
+    },
+    dashboardCard: {
+      backgroundColor: "white",
+      padding: "20px 0",
+    },
+    dashboardPrimaryText: {
+      fontWeight: "800",
+      fontSize: "40px",
+    },
+    dashboardSecondaryText: {
+      fontWeight: "400",
+      fontSize: "13px",
+      color: "black",
+    },
+    dashboardCardBtn: {
+      backgroundColor: primaryBlue,
+      color: "white",
+      marginTop: "25px",
+      borderRadius: "20px",
+      fontSize: "11px",
+      padding: "2px 40px",
     },
   })
 );

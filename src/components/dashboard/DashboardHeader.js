@@ -1,5 +1,6 @@
-import { Box, Typography, Container } from "@material-ui/core";
+import { Box, Typography, Container, Avatar } from "@material-ui/core";
 import { useDashboardStyles } from "./dashboard.style";
+import NotificationsIcon from "@material-ui/icons/Notifications";
 
 const DashboardHeader = () => {
   const classes = useDashboardStyles();
@@ -7,9 +8,13 @@ const DashboardHeader = () => {
   return (
     <Box className={classes.headerContainer}>
       <Typography className={classes.headerText}>Hello Cedric!</Typography>
-      <Box>
+      <Box className={classes.headerContainerLeft}>
         <Container>input</Container>
-        <Container>Notification</Container>
+        <Container>
+          <Avatar>
+            <NotificationsIcon />
+          </Avatar>
+        </Container>
       </Box>
     </Box>
   );
