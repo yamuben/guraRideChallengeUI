@@ -28,7 +28,7 @@ const DashboardCard = (props) => {
               }}
             >
               <object
-                data={income}
+                data={props.icon}
                 height="35"
                 width="35"
                 style={{ fill: "orangered" }}

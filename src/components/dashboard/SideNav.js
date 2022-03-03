@@ -11,7 +11,7 @@ const SideNav = () => {
     <nav>
       <ul className={classes.list}>
         <li className={`${classes.listItem} ${classes.mg1}`}>
-          <DashboardIcon />
+          <DashboardIcon className={classes.linkIcon} />
           <NavLink className={classes.linkItem} to="/">
             Dashboard
           </NavLink>

@@ -128,6 +128,25 @@ export const useDashboardStyles = makeStyles((Theme) =>
       fontSize: "11px",
       padding: "2px 40px",
     },
+    dashboardSearch: {
+      color: primaryTextColor,
+      backgroundColor: "white",
+      borderRadius: "20px",
+      width: "40vw",
+      border: "none",
+      paddingLeft: "10px",
+    },
+    dashboardActions: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "spacebetween",
+    },
+    dashboardActionBtn: {
+      backgroundColor: primaryBlue,
+      color: "white",
+      borderRadius: "20px",
+      marginLeft: "auto",
+    },
   })
 );
 
@@ -136,6 +155,7 @@ export const useNavStyles = makeStyles((Theme) =>
     list: {
       listStyle: "none",
       color: "black",
+      paddingLeft: "15px",
     },
     listItem: {
       display: "flex",
@@ -148,11 +168,15 @@ export const useNavStyles = makeStyles((Theme) =>
     linkItem: {
       width: "100%",
       textDecoration: "none",
-      fontSize: "18px",
+      fontSize: "16px",
+      marginLeft: "1rem",
       color: primaryTextColor,
       "&:hover": {
         color: primaryBlue,
       },
+    },
+    linkIcon: {
+      color: primaryTextColor,
     },
     mg1: {
       margin: "15px 0",
