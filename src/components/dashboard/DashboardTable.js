@@ -12,11 +12,11 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData("Eclair", 262, 16.0, 24, 6.0),
-  createData("Cupcake", 305, 3.7, 67, 4.3),
-  createData("Gingerbread", 356, 16.0, 49, 3.9),
+  createData("Feb 15, 01:20 PM", 159, 6.0, 24, 4.0),
+  createData("Feb 15, 01:20 PM", 237, 9.0, 37, 4.3),
+  createData("Feb 15, 01:20 PM", 262, 16.0, 24, 6.0),
+  createData("Feb 15, 01:20 PM", 305, 3.7, 67, 4.3),
+  createData("Feb 15, 01:20 PM", 356, 16.0, 49, 3.9),
 ];
 
 export default function DashboardTable() {
@@ -25,11 +25,11 @@ export default function DashboardTable() {
       <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
         <TableHead>
           <TableRow>
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell align="right">Calories</TableCell>
-            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+            <TableCell>Date</TableCell>
+            <TableCell align="right">Entry #</TableCell>
+            <TableCell align="right">Car Plate #&nbsp;(g)</TableCell>
+            <TableCell align="right">Client Name&nbsp;(g)</TableCell>
+            <TableCell align="right">Goods Qty&nbsp;(g)</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

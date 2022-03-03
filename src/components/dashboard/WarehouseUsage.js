@@ -6,10 +6,10 @@ const WarehouseUsage = () => {
   const classes = useDashboardStyles();
   return (
     <Card
-      className={`${classes.mgTop1} ${classes.wUsagecard} ${classes.bRadius}`}
+      className={`${classes.mgTop0} ${classes.wUsagecard} ${classes.bRadius}`}
     >
       <CardContent>
-        <Typography className={`${classes.mg1}`}>Warehouse usage</Typography>
+        <Typography>Warehouse usage</Typography>
         <Box className={`${classes.center} ${classes.mg1}`}>
           <Box sx={{ position: "relative", display: "inline-flex" }}>
             <CircularProgress
