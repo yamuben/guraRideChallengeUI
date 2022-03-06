@@ -1,0 +1,12 @@
+[
+  {
+    "id": 123,
+    "deviceName": "a",
+    "location": [10, 45]
+  },
+  {
+    "id": 1234,
+    "deviceName": "b",
+    "location": [15, 105]
+  }
+]
