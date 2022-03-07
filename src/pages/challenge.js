@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { EnvironmentOutlined } from "@ant-design/icons";
-import { message } from "antd";
+import { message,notification } from "antd";
 import axios from "axios";
 import data from "../assets/data.json";
 
 const Challenge = () => {
+  const [res,setRes]=useState({});
   useEffect(() => {
     const check = async () => {
       const response = await axios.post("http://localhost:9090/check", {
@@ -13,8 +14,8 @@ const Challenge = () => {
       });
 
       console.log(response);
-      message.success("Device A: " + response.data.message1);
-      message.success("Device B: " + response.data.message2);
+      setRes(response.data);
+
     };
     check();
   }, []);
@@ -39,7 +40,7 @@ const Challenge = () => {
           position: "relative",
         }}
       >
-        {data.map((d) => (
+        {data.map((d,index) => (
           <label
             style={{
               color: "blue",
@@ -51,7 +52,8 @@ const Challenge = () => {
           >
             {" "}
             <EnvironmentOutlined /> <br />
-            {d.deviceName}{" "}
+            {d.deviceName}{" "} <br/>
+            <label style={{fontSize:"13px",color:"green"}}> {index===0?res.message1:res.message2}</label>
           </label>
         ))}
       </div>
